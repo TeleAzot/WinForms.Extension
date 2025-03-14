@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace WinForms.Extension
 {
-    public partial class frmDarkening : Form
+    internal sealed partial class frmDarkening : Form
     {
         private readonly Form _srcFrm;
 
