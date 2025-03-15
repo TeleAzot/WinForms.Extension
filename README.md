@@ -1,4 +1,5 @@
 # WinForms.Extension
+Get the nuget package: ``` dotnet add package StoxCoding.WinForms.Extension ```
 ## DarkenForm
 The DarkenForm extension offers a method to darken a System.Windows.Forms.Form when showing another one on top of it.
 ![image](https://github.com/user-attachments/assets/1fee7fd0-11df-4039-97fb-78d0a0408ebd)
