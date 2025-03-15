@@ -12,6 +12,11 @@ namespace WinForms.Extension
     /// </summary>
     public class TextBoxHighlighter
     {
+        /// <summary>
+        /// The color with which the TextBoxes are highlighted. Default: Color.Yellow.
+        /// </summary>
+        public Color HighLightColor { get; set; } = Color.Yellow;
+
         private readonly float _borderWidth = 2.5f;
         private readonly int _outerVariance = 2;
 
@@ -22,7 +27,7 @@ namespace WinForms.Extension
         /// </summary>
         /// <param name="borderWidth">Sets the border width in pixels.</param>
         /// <param name="outerVariance">Sets the variance / tolerance / margin to the border in pixels.</param>
-        public TextBoxHighlighter(float borderWidth, int outerVariance)
+        public TextBoxHighlighter(float borderWidth = 2.5f, int outerVariance = 2)
         {
             _borderWidth = borderWidth;
             _outerVariance = outerVariance;
@@ -76,7 +81,7 @@ namespace WinForms.Extension
             //clear all borders
             sender.FindForm().Refresh();
             //draw border
-            Pen p = new Pen(Color.Yellow, _borderWidth);
+            Pen p = new Pen(HighLightColor, _borderWidth);
             Graphics g = e.Graphics;
 
             g.DrawRectangle(p, new Rectangle(sender.Location.X - _outerVariance, sender.Location.Y - _outerVariance, 
