@@ -5,6 +5,22 @@
     <Nullable>enable</Nullable>
     <UseWindowsForms>true</UseWindowsForms>
     <ImplicitUsings>enable</ImplicitUsings>
+    <PackageId>StoxCoding.WinForms.Extension</PackageId>
+    <Version>1.0.0</Version>
+    <Author>StoxCoding</Author>
+    <Product>Windows Forms Extension</Product>
+	<PackageTags>Windows Forms;WinForms;Extension</PackageTags>
+    <Description>
+		This class library offers multiple useful extensions and tools for Windows Forms Applications.
+		For this release see notes - https://github.com/TeleAzot/WinForms.Extension/blob/b47cd81a3bd15de7c7146b456a5bbb1aaff7cb3f/README.md
+	</Description>	  
   </PropertyGroup>
+
+	<ItemGroup>
+		<None Include="README.md">
+			<Pack>True</Pack>
+			<PackagePath>\</PackagePath>
+		</None>
+	</ItemGroup>
 
 </Project>
