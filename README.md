@@ -24,3 +24,6 @@ Here is an example of a call to DarkenForm:
 
 ![image](https://github.com/user-attachments/assets/cd5efaf5-c03a-44c8-8efd-d0c4b3d9d5d1)  
 (Apply highlighting for all TextBoxes in a custom collection.
+
+> [!TIP]
+You can also modify the HighLightColor property to set your custom hightlighting color. The default Color is yellow.
